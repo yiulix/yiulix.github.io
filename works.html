@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Bootstrap Example</title>
@@ -20,19 +20,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        My Works <span class="sr-only">(current)</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Global Game Jam</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Team Projects</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Personal Works</a>
-                    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="works.html">My Works</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Me</a>
@@ -40,22 +31,45 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron">
-        <div class="container">
-        <h1 class="display-4">Global Game Jam</h1>
-        <p class="lead">The Global Game Jam is an annual global events where my team need to create a complete game in one weekend! It is a really good practice for game design and development.</p>
-        </div>
-    </div>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <h3>Lollipop (2018)</h3>
-                <img src="lollipop_cover.png" class="img-thumbnail" alt="Lollipop">
-                <p>Transmit a bubble using lollipops and create a music piece!</p>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="res/lollipop_cover.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Lollipop</h5>
+                        <p class="card-text">Transmit a bubble using lollipops and create a music piece</p>
+                        <a href="lollipop.html" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="res/ww_cover.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wonder War</h5>
+                        <p class="card-text">Blow apart enemy's towers in wonder world</p>
+                        <p></p>
+                        <a href="#" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="res/ww_cover.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wonder War</h5>
+                        <p class="card-text">Blow apart enemy's towers in wonder world</p>
+                        <p></p>
+                        <a href="#" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
+
 
 </body>
 </html>
