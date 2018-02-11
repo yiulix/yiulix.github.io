@@ -5,21 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="res/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="res/TemplateData/style.css">
-    <script src="res/TemplateData/UnityProgress.js"></script>
-    <script src="res/Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/res.json", {onProgress: UnityProgress});
-    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top navbar-toggleable-sm">
-        <a class="navbar-brand" href="#">Ge Zhu</a>
+        <a class="navbar-brand" href="index.html">Ge Zhu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,49 +32,50 @@
         </div>
     </nav>
 
-        <div class="container">
-            <h1 class="display-4">Lollipop</h1>
-            <p class="lead">This is a casual rhythm game made for Global Game Jam 2018 by our 5 students group. The theme is "Transmission".</p>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary btn-lg active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Demo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-danger btn-lg" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Gameplay</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-info btn-lg" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Credits</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-success btn-lg" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Play it now</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab1">
-                    <iframe width="1080" height="720" align="middle"
-                            src="https://youtube.com/embed/JOK9sMlz8Ro"></iframe>
-                </div>
+    <div class="container">
+        <h1 class="display-4">Lollipop</h1>
+        <p class="lead">This is a casual rhythm game made for Global Game Jam 2018 by our 5 students group. The theme is "Transmission".</p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="btn btn-outline-primary btn-lg active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Demo</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-success btn-lg" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Gameplay</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info btn-lg" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Credits</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab1">
+                <iframe width="1080" height="720" align="middle"
+                        src="https://youtube.com/embed/JOK9sMlz8Ro"></iframe>
+            </div>
 
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="tab2">
-                    <ul>
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
-                    </ul>
-                </div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="tab3">...</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="tab4">
-                    <div class="webgl-content">
-                        <div id="gameContainer" style="width: 960px; height: 600px"></div>
-                        <div class="footer">
-                            <div class="webgl-logo"></div>
-                            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                            <div class="title">Lollipop-1.0</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="tab2">
+                <p>Goal:</p>
+                <ul>
+                    <li>Move the bubble from left to right to the next level.</li>
+                </ul>
+                <p>Mechanics:</p>
+                <ul>
+                    <li>Using "Q", "W", "E", "R", "U", "I", "O", "P" to control the eight lollipops.</li>
+                    <li>Protecting the bubble from falling into water.</li>
+                </ul>
+                <a href="res/lollipop/gameplay.html" class="btn btn-outline-danger">Play Now</a>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="tab3">
+                <p>Team members:</p>
+                <ul>
+                    <li>Weiqi "Xylitogum" Gu - Director, Level Designer, Programmer</li>
+                    <li><span style="font-weight:bold">Ge Zhu - Programmer</span></li>
+                    <li>Anqi Liu - 2D Artist</li>
+                    <li>Victor Liu - Audio Designer</li>
+                    <li>Yu Xiao - Video Editor</li>
+                </ul>
             </div>
         </div>
+    </div>
 
 </body>
 </html>
