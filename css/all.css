@@ -1,5 +1,5 @@
 body {
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 h3 {
@@ -20,11 +20,14 @@ padding-right: 20px;
 
 @media (min-width: 992px) {
     #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-        -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-        transition: padding-top 0.3s, padding-bottom 0.3s;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        letter-spacing: 1px;
+        border-bottom: none;
+        background: transparent;
     }
 
         #mainNav .navbar-brand {
@@ -41,14 +44,74 @@ padding-right: 20px;
         #mainNav.navbar-shrink {
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
+            background-color: #212529
         }
 
             #mainNav.navbar-shrink .navbar-brand {
                 font-size: 1.5em;
             }
+
 }
 
 #ha{
-    background-image: url("../res/lollipop_cover.png");
+    background-image: url("../res/bg.jpg");
     background-size:cover;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background-image: url(../res/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+}
+.welcome{
+    padding-top: 200px;
+    font-size: 70px;
+    font-weight:bold;
+}
+
+.intro{
+    padding-top: 50px;
+    padding-bottom:100px;
+    font-size: 30px;
+}
+
+.checkmywork{
+    border-radius:0px;
+    font-size: 30px;
+    color: black;
+}
+
+    .checkmywork:hover {
+        -webkit-transition: box-shadow 0.3s;
+        -moz-transition: box-shadow 0.3s;
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 4px #f7f7f7;
+    }
+
+.row{
+    padding-top:20px;
+}
+
+footer {
+    padding: 50px 0;
+}
+
+    footer p {
+        font-size: 14px;
+        margin: 0;
+    }
+#tech{
+    padding-bottom:20px;
+}
+
+.school{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#largeimg{
+    width:85%;
 }
