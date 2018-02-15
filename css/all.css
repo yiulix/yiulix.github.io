@@ -5,7 +5,7 @@ body {
 h3 {
 padding-bottom: 10px;
 }
-p {
+.card-text {
 padding-top: 10px;
 font-size: 20px;
 }
@@ -61,7 +61,7 @@ padding-right: 20px;
 header {
     text-align: center;
     color: #fff;
-    background-image: url(../res/bg.jpg);
+    background-image: url(../res/bg2.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -108,10 +108,27 @@ footer {
 }
 
 .school{
-    font-size: 20px;
+    font-size: 30px;
     font-weight:bold;
+    padding-top:0px;
 }
 
 #largeimg{
     width:85%;
+}
+
+#playbtn{
+    font-size: 35px;
+}
+
+#portimg{
+    width:25%;
+    padding-bottom:10px;
+}
+
+#resume{
+    font-size:40px;
+    font-weight:bold;
+
+
 }
