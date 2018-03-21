@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wonder War</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark fixed-top navbar-toggleable-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="indexc.html">Ge Zhu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexc.html">主页</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="worksc.html">我的作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mec.html">关于我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1 class="welcome">我的作品</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 class="display-4">仙境之战</h1>
+            </div>
+            <div class="col-sm-4">
+                <a href="res/wonderwar/gameplay.html" class="btn btn-outline-danger" id="playbtn">现在就玩</a>
+            </div>
+        </div>
+        <p class="lead">这是一个回合制策略竞技游戏。两名玩家分别扮演仙境中的红白皇后，通过建造各种不同的塔最终摧毁敌方主塔。</p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="btn btn-outline-primary btn-lg active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Demo视频</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-success btn-lg" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">设计</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info btn-lg" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">制作名单</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab1">
+                <iframe width="1080" height="720" align="middle"
+                        src="http://v.youku.com/v_show/id_XMzQ4MDIwMjkzNg==.html?spm=a2h3j.8428770.3416059.1"></iframe>
+            </div>
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="tab2">
+                <p>目标:</p>
+                <ul>
+                    <li>摧毁敌方主塔。</li>
+                </ul>
+                <p>玩法:</p>
+                <ul>
+                    <li>9种不同天赋，有增强攻防的基础天赋，也有制造雾区，放置探测气球等辅助天赋。搭配组合出独特的战术体系</li>
+                    <img id="middleimg" src="res/wwtalent.png">
+                    <li>4种类型塔，分别为攻击，防御，移动，和能力塔。在合适的位置摆放合适类型的塔，排兵布阵。</li>
+                    <img id="middleimg" src="res/wwselect.png">
+                    <li>选择合适的攻击型塔进行瞄准与射击，利用炮弹的冲击力粉碎敌方的塔</li>
+                    <img id="middleimg" src="res/wwshoot.png">
+                </ul>
+                <p>设计理念:</p>
+                <ul>
+                    <li>游戏以爱丽丝梦游仙境为背景，提炼故事中红白两皇后的核心特点对塔进行设计。同一阵营的塔有自己统一的风格。白皇后的塔全部通体雪白，并以不同国际象棋为模型。红皇后塔色彩鲜艳，并以扑克牌为装饰</li>
+                    <li>平行与串联相结合的天赋设计。游戏有普通，功能，视野，三种天赋类型，玩家可在每种类型里选择一个天赋，总共选择3种天赋。这种设计同时保证了多样性和平衡性，知名游戏如英雄联盟也使用这种设计。</li>
+                </ul>
+                <p>技术亮点:</p>
+                <ul>
+                    <li>塔的瓦解系统：游戏运用纯物理的碰撞，塔在被击中后会瓦解成许多块。实现原理是将模型模块化，并对每个模块绘制90%以上贴合的碰撞体。</li>
+                    <img id="middleimg" src="res/wwdc.png">
+                    <img id="middleimg" src="res/wwtech.png">
+                </ul>
+
+                <a href="res/wonderwar/gameplay.html" class="btn btn-outline-danger">现在就玩</a>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="tab3">
+                <p>Team AGXZ:</p>
+                <ul>
+                    <li><span style="font-weight:bold">朱葛 - 总监，设计师，程序</span></li>
+                    <li>刘安琪 - 2D 美术</li>
+                    <li>郭诗萌 - UI程序</li>
+                    <li>肖玉 - 3D 美术，项目经理</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Ge Zhu 2018</p>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

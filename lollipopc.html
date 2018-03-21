@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lollipop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark fixed-top navbar-toggleable-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="indexc.html">Ge Zhu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexc.html">主页</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="worksc.html">我的作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mec.html">关于我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1 class="welcome">我的作品</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-4">
+        <h1 class="display-4">棒棒糖</h1>
+        </div>
+        <div class="col-sm-4">
+        <a href="res/lollipop/gameplay.html" class="btn btn-outline-danger" id="playbtn">现在就玩</a>
+        </div>
+        </div>
+        <p class="lead">This is a casual rhythm game made for Global Game Jam 2018 by our 5 students group. The theme is "Transmission".</p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="btn btn-outline-primary btn-lg active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Demo视频</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-success btn-lg" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">设计</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info btn-lg" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">制作名单</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab1">
+                <iframe width="1080" height="720" align="middle"
+                        src="http://v.youku.com/v_show/id_XMzQ4MDIxMzQ2NA==.html?spm=a2h3j.8428770.3416059.1"></iframe>
+            </div>
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="tab2">
+                <p>目标:</p>
+                <ul>
+                    <li>利用棒棒糖从左向右传递气泡。</li>
+                </ul>
+                <p>玩法:</p>
+                <ul>
+                    <li>利用 "Q", "W", "E", "R", "U", "I", "O", "P" 八个键控制八个棒棒糖。</li>
+                    <img id="middleimg" src="res/lolikey.png">
+                    <li>保护脆弱的气泡，防止其落入水中。</li>
+                    <img id="middleimg" src="res/loliwater.png">
+                </ul>
+                <p>特色:</p>
+                <ul>
+                    <li>八个棒棒糖对应钢琴上的八个键，随着顶泡泡的过程，玩家亦可享受自己创作的美妙乐曲。</li>
+                </ul>
+                <a href="res/lollipop/gameplay.html" class="btn btn-outline-danger">现在就玩</a>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="tab3">
+                <p>小组成员:</p>
+                <ul>
+                    <li>顾玮琦 - 总监，关卡设计，程序</li>
+                    <li><span style="font-weight:bold">朱葛 - 程序</span></li>
+                    <li>刘安琪 - 2D 美术</li>
+                    <li>刘子琦 - 音效</li>
+                    <li>肖玉 - 视频剪辑</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Ge Zhu 2018</p>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
