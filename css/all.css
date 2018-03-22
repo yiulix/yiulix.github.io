@@ -136,3 +136,8 @@ footer {
     width: 70%;
     padding-bottom: 20px;
 }
+
+.backup {
+    font-size:40px;
+    color:brown;
+}
