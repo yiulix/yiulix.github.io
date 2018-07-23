@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fast Shadow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark fixed-top navbar-toggleable-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Ge Zhu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="works.html">MY WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="me.html">ABOUT ME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1 class="welcome">My Works</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+        <h1 class="display-4">Fast Shadow Tech Demo</h1>
+        </div>
+        <p class="lead">This is a realtime 3D shadow simulation using 2D algorithms.</p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="btn btn-outline-primary btn-lg active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Demo</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-success btn-lg" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info btn-lg" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Credits</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab1">
+                <iframe width="1080" height="720" align="middle"
+                        src="https://youtube.com/embed/NrMC8WGPzz0"></iframe>
+            </div>
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="tab2">
+                <p>Goal:</p>
+                <ul>
+                    <li>The goal of Fash Shadow is to provide a simple and fast realtime shadow solution for top-down 2D or 2.5D games like Crimsonland. It is used to
+                        create an illusion that the object is in 3D space through 2D shadows. <br />
+                        Fast Shadow can achieve much similar result as 3D shadow while keep computing time at 2D level.
+                    </li>
+                </ul>
+                <br />
+                <p>Technical Features:</p>
+                <ul>
+                    <li>Fast Shadow creates the illusion of 3D shadow by changing the way of 2D shadow is calculated.
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p>Traditional 2D shadow:</p>
+                                <img id="middleimg" src="res/tradition2dshadow.png" style="width:320px;height:320px;">
+                            </div>
+                            <div class="col-sm-4">
+                                <p>3D shadow in 3D game engine:</p>
+                                <img id="middleimg" src="res/3dengine.png" style="width:320px;height:320px;">
+                            </div>
+                            <div class="col-sm-4">
+                                <p>Fash Shadow solution:</p>
+                                <img id="middleimg" src="res/fastshadow.png" style="width:320px;height:320px;">
+                            </div>
+                        </div>
+                     </li>
+                     <li>Fast Shadow uses the unique technique I created called "neighbor pixel assumption" based on the continuity feature of shadow. <br />
+                        This technique can increase the algorithm's speed by up to 100% !
+                        
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p>With "neighbor pixel assumption":</p>
+                                    <img id="middleimg" src="res/withtech.gif" style="width:320px;height:320px;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-4">
+                                        <p>Without "neighbor pixel assumption":</p>
+                                        <img id="middleimg" src="res/withouttech.gif" style="width:320px;height:320px;">
+                                    </div>
+                                </div>
+                         </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="tab3">
+                <p>Team members:</p>
+                <ul>
+                    <li><span style="font-weight:bold">Ge Zhu - Designer, Programmer, Team Leader</span></li>
+                    <li>Qiaopibuqiaopi - Programmer</li>
+                    <li>Shimeng Guo - Programmer</li>
+                    <li>Wenqi Fan - Programmer</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Ge Zhu 2018</p>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
