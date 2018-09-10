@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fast Shadow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark fixed-top navbar-toggleable-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">朱葛</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexc.html">主页</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="worksc.html">我的作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mec.html">关于我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1 class="welcome">我的作品</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 class="display-4">快速阴影技术展示</h1>
+            </div>
+        </div>
+        <p class="backup">设计:</p>
+        <ul>
+            <li>
+                “快速阴影”技术的目的是为俯视视角的2D游戏提供快速的阴影解决方案。利用阴影创造出2D图形存在于3D空间的错觉。 <br />
+                “快速阴影”技术可以创造出类似3D阴影，但同时只需2D阴影的计算量。
+            </li>
+        </ul>
+        <br />
+        <p class="backup">技术特点:</p>
+        <ul>
+            <li>
+                “快速阴影”改变传统2D阴影的计算方式来创造类似3D阴影的效果。
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>传统2D阴影:</p>
+                        <img id="middleimg" src="res/tradition2dshadow.png" style="width:320px;height:320px;">
+                    </div>
+                    <div class="col-sm-4">
+                        <p>3D游戏引擎中的3D阴影:</p>
+                        <img id="middleimg" src="res/3dengine.png" style="width:320px;height:320px;">
+                    </div>
+                    <div class="col-sm-4">
+                        <p>“快速阴影”利用2D算法创造的类似3D阴影:</p>
+                        <img id="middleimg" src="res/fastshadow.png" style="width:320px;height:320px;">
+                    </div>
+                </div>
+            </li>
+            <li>
+                “快速阴影”采用我设计的“相邻像素猜测”技术，提升运算速度可达100%。
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>开启“相邻像素检测”:</p>
+                        <img id="middleimg" src="res/withtech.gif" style="width:320px;height:320px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>关闭“相邻像素检测”:</p>
+                        <img id="middleimg" src="res/withouttech.gif" style="width:320px;height:320px;">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <p class="backup">制作人员:</p>
+        <ul>
+            <li><span style="font-weight:bold">朱葛 - 设计, 编程, Team Leader</span></li>
+            <li>俏皮不俏皮 - 编程</li>
+            <li>郭诗萌 - 编程</li>
+            <li>范文琦 - 编程</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Ge Zhu 2018</p>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
